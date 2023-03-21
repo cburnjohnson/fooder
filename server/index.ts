@@ -1,10 +1,13 @@
-import { Request, Response } from 'express';
+import express, { Request, Response } from 'express';
 import axios from 'axios';
-const express = require('express');
+import cors from 'cors';
+
 const app = express();
 require('dotenv').config();
 
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
+
+app.use(cors());
 
 app.get('/restaurants', async (req: Request, res: Response) => {
   try {
