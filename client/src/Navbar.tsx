@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
-    <nav>
-      <h1>Fooder</h1>
+    <nav className="bg-dark-200 py-5 px-6">
+      <h1 className="text-accent uppercase font-bold">Fooder</h1>
     </nav>
   );
 }
