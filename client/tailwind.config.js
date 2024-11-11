@@ -12,6 +12,10 @@ export default {
       'light-100': '#FFFCF2',
       white: '#FFFFFF'
     },
+    fontFamily: {
+      'display': ['Luckiest Guy'],
+      'sans': ['Poppins']
+    },
     extend: {},
   },
   plugins: [],

@@ -12,12 +12,12 @@ export default function CardBody() {
       </div>
 
       <div className='flex gap-12 justify-center mt-2'>
-        <h3 className='uppercase font-bold text-black text-lg'>Rating</h3>
+        <h3 className='uppercase text-black text-lg font-display'>Rating</h3>
         <p>4.5</p>
       </div>
 
       <div className='mt-3 text-center'>
-        <h3 className='uppercase font-bold text-black text-base'>
+        <h3 className='uppercase text-black text-base font-display'>
           Description
         </h3>
         <p className='text-sm'>
@@ -27,19 +27,21 @@ export default function CardBody() {
         </p>
       </div>
 
-      <div className='mt-6 flex text-center justify-between '>
+      <div className='mt-6 flex text-center justify-between'>
         <div className='flex-1'>
-          <h3 className='uppercase font-bold text-black text-sm'>Address</h3>
+          <h3 className='uppercase text-black text-sm font-display'>
+            Address
+          </h3>
           <p className='text-xs'>1234 Main St</p>
         </div>
 
         <div className='flex-1'>
-          <h3 className='uppercase font-bold text-black text-sm'>Hours</h3>
+          <h3 className='uppercase text-black text-sm font-display'>Hours</h3>
           <p className='text-xs'>Open - Closes at 9PM</p>
         </div>
 
         <div className='flex-1'>
-          <h3 className='uppercase font-bold text-black text-sm'>
+          <h3 className='uppercase text-black text-sm font-display'>
             Phone Number
           </h3>
           <p className='text-xs'>541-456-7890</p>
