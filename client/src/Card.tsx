@@ -1,4 +1,4 @@
-import placeholderImage from './assets/placeholder.webp';
+import CardBody from './CardBody';
 
 export default function Card() {
   return (
@@ -7,11 +7,7 @@ export default function Card() {
         MCDONALDS
       </h2>
 
-      <div className='mt-4'>
-        <div>
-          <img src={placeholderImage} alt='' className='w-full max-w-full rounded border-accent border-2' />
-        </div>
-      </div>
+      <CardBody />
     </div>
   );
 }
