@@ -9,7 +9,8 @@ export default {
       accent: '#EB5E28',
       'dark-100': '#403D39',
       'dark-200': '#252422',
-      'light-100': '#FFFCF2'
+      'light-100': '#FFFCF2',
+      white: '#FFFFFF'
     },
     extend: {},
   },

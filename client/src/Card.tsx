@@ -1,4 +1,5 @@
 import CardBody from './CardBody';
+import CardButtons from './CardButtons';
 
 export default function Card() {
   return (
@@ -8,6 +9,10 @@ export default function Card() {
       </h2>
 
       <CardBody />
+
+      <footer>
+        <CardButtons />
+      </footer>
     </div>
   );
 }
