@@ -1,6 +1,6 @@
 import placeholderImage from './assets/placeholder.webp';
 
-export default function CardBody() {
+export default function CardBody({ activeRestaurant }) {
   return (
     <div className='mt-4'>
       <div>
@@ -29,10 +29,8 @@ export default function CardBody() {
 
       <div className='mt-6 flex text-center justify-between'>
         <div className='flex-1'>
-          <h3 className='uppercase text-black text-sm font-display'>
-            Address
-          </h3>
-          <p className='text-xs'>1234 Main St</p>
+          <h3 className='uppercase text-black text-sm font-display'>Address</h3>
+          <p className='text-xs'>{activeRestaurant.formattedAddress}</p>
         </div>
 
         <div className='flex-1'>
