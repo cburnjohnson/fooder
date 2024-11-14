@@ -52,18 +52,23 @@ function Card() {
   const [activeRestaurant, setActiveRestaurant] = useState(
     restaurants[0]
   );
-  console.log(activeRestaurant); //eslint-disable-line
+
+  function skipRestaurant() {
+    const activeRestaurantIndex = restaurants.indexOf(activeRestaurant);
+    
+    setActiveRestaurant(restaurants[activeRestaurantIndex + 1]);
+  }
 
   return (
     <div className='bg-light-100 max-w-full w-96 mx-auto mt-14 rounded-md border-2 border-accent py-5 px-4 f'>
       <h2 className='text-5xl text-accent uppercase text-center font-bold font-display'>
-        {activeRestaurant?.displayName?.text || 'No Restaurants Found'}
+        {activeRestaurant?.displayName || 'No Restaurants Found'}
       </h2>
 
       <CardBody activeRestaurant={activeRestaurant} />
 
       <footer>
-        <CardButtons />
+        <CardButtons skipRestaurant={skipRestaurant} />
       </footer>
     </div>
   );
