@@ -9,3 +9,10 @@
   margin: 0;
   padding: 0;
 }
+
+.background {
+  background-image: url('../assets/burger.svg');
+  background-repeat: repeat;
+  
+  z-index: 1;
+}
